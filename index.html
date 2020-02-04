@@ -5,16 +5,16 @@
     <title>Гостиница <Седона></title>
   </head>
   <body>
-   <header>
-    <nav>
-     <a>
+   <header class="main-header">
+    <nav class="main-navigation">
+     <a class="main-header-logo">
       <img src="#" width="100" height="70" alt="Логотип гостиницы <Седона>">
      </a>
-     <ul>
-       <li><a href="#">Информация</a></li>
-       <li><a href="#">Фото и видео</a></li>
-       <li><a href="#">Карта штата</a></li>
-       <li><a href="#">Гостиницы</a></li>
+     <ul class="site-navigation">
+       <li><a href="info.html">Информация</a></li>
+       <li><a href="fotovideo.html">Фото и видео</a></li>
+       <li><a href="map.html">Карта штата</a></li>
+       <li><a href="hotel.html">Гостиницы</a></li>
      </ul>
     </nav>
    </header>
@@ -23,9 +23,11 @@
      <h1>Гостиница 'Седона'</h1>
       <ul>
         <li>
-         <img src="#" width="300" height="200" alt="Фото природы города Седона">
+         <img src="#" width="300" height="200" alt="Фото природы города Седона- фоновое изображение">
+         <img src="#" width="459" height="353" alt="Приветствие">
+         <img src="#" width="1203" height="59" alt="многоугольник для фонового изображения">
         </li>
-        <li>
+        <li class="header-index">
           Седона - небольшой городок в Аризоне, заслуживающий большего!
         </li>
         <li>
@@ -34,7 +36,7 @@
        </ul>
       </section>
       <article>
-         <div><h2>Настоящий город</h2>
+         <div class="true-city"><h2>Настоящий город</h2>
            <p>№1</p>
            <p>Cедона не аттракцион для туристов,там течет своя жизнь</p>
          </div>
@@ -83,9 +85,26 @@
       <section>
         <div class="maps"></div>
         <h2>Заинтересовались?</h2>
-        <div class="save">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</div>
-        <!-- Здесь будет форма -->
+         <div class="save">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</div>
+        <h3>Поиск гостиницы в седоне</h3>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="arrival">Дата заезда</label>
+            <input id="arrival" type="date" name="date-in" value="2017-04-24">
+          </p>
+          <p>
+            <label for="departure">Дата выезда</label>
+            <input id="departure" type="date" name="date-off" value="2017-07-04">
+          </p>
+          <p>
+            <button type="button" name="adults">Взрослые:</button><!-- будет указанно кол-во человек -->
+          </p>
+          <p>
+            <button type="button" name="children">Дети:</button><!-- будет указанно кол-во человек -->
+          </p>
+          <button type="submit">Отправить</button>
         <img src="#" width="400" height="400" alt="карта"> <!--Здесь будет карта-->
+       </form>
       </section>
    </main>
    <footer>
