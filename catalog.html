@@ -8,9 +8,9 @@
     <header class="main-header">
      <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
-       <img src="#" width="120" height="120" alt="Логотип гостиницы <Седона>">
+       <img src="img/icons/logo.svg" width="120" height="120" alt="Логотип гостиницы Седона">
       </a>
-      <ul class="site-navigation">
+      <ul class="navigation-list">
         <li><a href="info.html">Информация</a></li>
         <li><a href="fotovideo.html">Фото и видео</a></li>
         <li><a href="map.html">Карта штата</a></li>
@@ -19,20 +19,33 @@
      </nav>
     </header>
     <section class="filter">
+      <img src="img/background/filter-background.jpg" width="1200" height="800" alt="Фото природы города Седона- размытое фоновое изображение">
       <h2>Основные критерии</h2>
           <div class="container">
             <div class="filter-row">
               <div class="filter-col-parameters">
                 <span class="filter-title">Инфраструктора</span>
-                <span class="filter-checkbox"><input type="checkbox" checked> Бассейн</span>
-                <span class="filter-checkbox"><input type="checkbox"> Парковка</span>
-                <span class="filter-checkbox"><input type="checkbox"> Wi-Fi</span>
+                <div>
+                   <label><input type="checkbox" name="swim-pool" checked>Бассейн</label>
+                </div>
+                <div>
+                   <label><input type="checkbox" name="parking">Парковка</label>
+                </div>
+                <div>
+                   <label><input type="checkbox" name="wi-fi">Wi-fi</label>
+                </div>
               </div>
               <div class="filter-col-parameters">
                 <span class="filter-title">Тип жилья:</span>
-                <span class="filter-checkbox"><input type="checkbox" checked> Гостиница</span>
-                <span class="filter-checkbox"><input type="checkbox" checked> Мотель</span>
-                <span class="filter-checkbox"><input type="checkbox" checked> Аппартаменты</span>
+                <div>
+                   <label><input type="checkbox" name="hotel" checked>Гостиница</label>
+                </div>
+                <div>
+                   <label><input type="checkbox" name="motel" checked>Мотель</label>
+                </div>
+                <div>
+                   <label><input type="checkbox" name="apartments" checked>Аппартаменты</label>
+                </div>
               </div>
               <div class="filter-col-slider">
                 <span class="filter-title">Стоимость в сутки</span>
@@ -51,17 +64,13 @@
               </div>
               <div class="sort-col-nav">
                 <span class="sort-remark">Сортировка:</span>
-                <ul class="sort-nav-list">
-                  <li><a href="for-price.html" aria-label="По цене">По цене</a></li>
-                  <li><a href="for-type.html" aria-label="По типу">По типу</a></li>
-                  <li><a href="for-rating" aria-label="По рейтингу">По рейтингу</a></li>
-                </ul>
-              </div>
+                 <span class="price"><button type="button">По цене</button></span>
+                 <span class="type"><button type="button">По типу</button></span>
+                 <span class="rating"><button type="button">По рейтингу</button></span>
+               </div>
               <div class="sort-col-arrows">
-                <ul class="sort-arrows-list">
-                  <li><a href="sort-big" aria-label="Отсорировать по возрастанию">Отсорировать по возрастанию</a></li>
-                  <li><a href="sort-little" aria-label="Отсорировать по убыванию">Отсорировать по убыванию</a></li>
-                </ul>
+                  <span class="increase"><button type="button">Отсорировать по возрастанию</button></span>
+                  <span class="decrease"><button type="button">Отсорировать по убыванию</button></span>
               </div>
             </div>
           </div>
@@ -70,66 +79,72 @@
       <h1>Гостиницы</h1>
        <ul>
          <li>
-           <a href="amara.html">
-            <img src="img/images/3.jpg" width="135" height="90" alt="Гостиница AMARA RESORT & SPA">
-           </a>
-           <h2>
-              <a href="amara.html">
-                <span>AMARA RESORT & SPA</span>
-              </a>
-            </h2>
-              <div class="price">ГОСТИНИЦА ОТ 4000 Р.</div>
-              <a href="detail.html" aria-label="Подробнее">Подробнее</a>
-              <a href="reserv.html" aria-label="Забранировать">Забранировать</a>
+          <div class="hotels">
+            <a href="amara.html">
+              <img src="img/images/3.jpg" width="135" height="90" alt="Гостиница AMARA RESORT & SPA">
+            </a>
+            <div class="hotels-amara">
+              <h4>
+                <a href="amara.html">AMARA RESORT & SPA</a>
+              </h4>
+                <div class="price">ГОСТИНИЦА ОТ 4000 Р.</div>
+                <a href="detail.html" aria-label="Подробнее">Подробнее</a>
+                <a href="reserv.html" aria-label="Забранировать">Забранировать</a>
+            </div>
+          </div>
               <div class="estimation">
                 <div class="stars">
-                 <span></span><!--звезды отеля-->
-                 <span></span><!--звезды отеля-->
-                 <span></span><!--звезды отеля-->
-                 <span></span><!--звезды отеля-->
+                  <span><img src="img/icons/star.svg" alt="Звезда"></span>
+                  <span><img src="img/icons/star.svg" alt="Звезда"></span>
+                  <span><img src="img/icons/star.svg" alt="Звезда"></span>
+                  <span><img src="img/icons/star.svg" alt="Звезда"></span>
                 </div>
                 <div class="rating">Рейтинг 8.5</div>
               </div>
          </li>
          <li>
-           <a href="desert.html">
-             <img src="img/images/5.jpg" width="135" height="90" alt="Мотель DESERT QUAIL INN">
-           </a>
-           <h2>
-              <a href="desert.html">
-                <span>DESERT QUAIL INN</span>
-              </a>
-           </h2>
-             <div class="price">МОТЕЛЬ ОТ 3000 Р.</div>
-             <a href="detail.html" aria-label="Подробнее">Подробнее</a>
-             <a href="reserv.html" aria-label="Забранировать">Забранировать</a>
-             <div class="estimation">
+          <div class="hotels">
+             <a href="desert.html">
+              <img src="img/images/5.jpg" width="135" height="90" alt="Мотель DESERT QUAIL INN">
+             </a>
+             <div class="hotels-desert">
+               <h4>
+                 <a href="desert.html">DESERT QUAIL INN</a>
+               </h4>
+                <div class="price">МОТЕЛЬ ОТ 3000 Р.</div>
+                <a href="detail.html" aria-label="Подробнее">Подробнее</a>
+                <a href="reserv.html" aria-label="Забранировать">Забранировать</a>
+              </div>
+            </div>
+              <div class="estimation">
                <div class="stars">
-                <span></span><!--звезды отеля-->
-                <span></span><!--звезды отеля-->
-                <span></span><!--звезды отеля-->
+                 <span><img src="img/icons/star.svg" alt="Звезда"></span>
+                 <span><img src="img/icons/star.svg" alt="Звезда"></span>
+                 <span><img src="img/icons/star.svg" alt="Звезда"></span>
                </div>
                <div class="rating">Рейтинг 8.9</div>
              </div>
          </li>
          <li>
-           <a href="villas.html">
-             <img src="img/images/4.jpg" width="135" height="90" alt="Мотель VILLAS AT POCO DIABLO">
-           </a>
-           <h2>
-              <a href="villas.html">
-                <span>VILLAS AT POCO DIABLO</span>
-              </a>
-           </h2>
-              <div class="price">АППАРТАМЕНТЫ ОТ 2000 Р.</div>
-              <a href="detail.html" aria-label="Подробнее">Подробнее</a>
-              <a href="reserv.html" aria-label="Забранировать">Забранировать</a>
+          <div class="hotels">
+             <a href="villas.html">
+               <img src="img/images/4.jpg" width="135" height="90" alt="Мотель VILLAS AT POCO DIABLO">
+             </a>
+             <div class="hotels-villas">
+             <h4>
+              <a href="villas.html">VILLAS AT POCO DIABLO</a>
+             </h4>
+               <div class="price">АППАРТАМЕНТЫ ОТ 2000 Р.</div>
+               <a href="detail.html" aria-label="Подробнее">Подробнее</a>
+               <a href="reserv.html" aria-label="Забранировать">Забранировать</a>
+             </div>
+           </div>
               <div class="estimation">
                 <div class="stars">
-                 <span></span><!--звезды отеля-->
-                 <span></span><!--звезды отеля-->
-                </div>
-                <div class="rating">Рейтинг 9.2</div>
+                  <span><img src="img/icons/star.svg" alt="Звезда"></span>
+                  <span><img src="img/icons/star.svg" alt="Звезда"></span>
+               </div>
+               <div class="rating">Рейтинг 9.2</div>
               </div>
            </li>
        </ul>
@@ -139,16 +154,18 @@
         #VISITSEDONA<br>
         ТЕЛ. +7 (495) 666 02 66
       </p>
-      <div>
-         <ul>
-           <li><a href="#">Твиттер</a></li>
-           <li><a href="#">Фейсбук</a></li>
-           <li><a href="#">Ютуб</a></li>
-         </ul>
-       </div>
-       <p>
-         <img src="#" width="10" height="10" alt="Логотип HTMLAcademy">
-       </p>
+      <div class="social-networks">
+        <ul class="social-networks-list">
+          <li class="social-networks-item"><a class="social-networks-link" href="https://twitter.com/"><img src="img/icons/twitter.svg" alt="твиттер"></a></li>
+          <li class="social-networks-item"><a class="social-networks-link" href="https://facebook.com/"><img src="img/icons/facebook.svg" alt="фейсбук"></a></li>
+          <li class="social-networks-item"><a class="social-networks-link" href="https://youtube.com/"><img src="img/icons/youtube.svg" alt="ютуб"></a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/icons/logo-html.svg" width="115" height="41" alt="Логотип HTMLAcademy">
+        </a>
+      </div>
     </footer>
   </body>
 </html>
