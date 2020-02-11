@@ -11,66 +11,67 @@
       <img src="img/icons/logo.svg" width="100" height="70" alt="Логотип гостиницы Седона">
      </a>
      <ul class="navigation-list">
-       <li><a href="info.html">Информация</a></li>
-       <li><a href="fotovideo.html">Фото и видео</a></li>
-       <li><a href="map.html">Карта штата</a></li>
-       <li><a href="hotel.html">Гостиницы</a></li>
+       <li class="navigation-list-item"><a href="info.html">Информация</a></li>
+       <li class="navigation-list-item"><a href="fotovideo.html">Фото и видео</a></li>
+       <li class="navigation-list-item"><a href="map.html">Карта штата</a></li>
+       <li class="navigation-list-item"><a href="hotel.html">Гостиницы</a></li>
      </ul>
     </nav>
    </header>
    <main>
-    <section>
-     <h1>Гостиница Седона</h1>
-      <ul>
-        <li class="icon">
-         <img src="img/background/background-photo.jpg" width="300" height="200" alt="Фото природы города Седона- фоновое изображение">
+    <div class="welcome">
+     <h1 class="welcome-edge">Седона</h1>
+      <div class="welcome-line">
+        <div class="welcome-icon">
          <img src="img/icons/logo-welcome.svg" width="459" height="353" alt="Приветствие">
          <img src="img/icons/intro-mask.svg" width="1203" height="59" alt="многоугольник для фонового изображения">
-        </li>
-        <li class="header-index">
+        </div>
+        <p class="subtitle">
           Седона - небольшой городок в Аризоне, заслуживающий большего!
-        </li>
-        <li class="reasons">
+        </p>
+       </div>
+        <p class="subtitle">
           Рассмотрим 5 причин, по которым седона круче, чем ГРАНД КАНЬОН!
-        </li>
-       </ul>
-      </section>
-      <article>
-         <div class="pluses">
-           <h2>Настоящий город</h2>
+        </p>
+      </div>
+      <div class="dignities">
+         <div class="dignities-pluses">
+           <h3>Настоящий город</h3>
            <p>№1</p>
            <p>Cедона не аттракцион для туристов,там течет своя жизнь</p>
          </div>
-         <div class="nature">
+         <div class="dignities-picture">
            <img src="img/images/1.jpg" width="800" height="256" alt="Природа">
          </div>
-       </article>
-       <article>
-         <div class="advantages">
+       </div>
+       <div class="features">
+         <div class="features-item">
            <img src="img/icons/housing.svg" width="20" height="20" alt="Дом"><br>
-           <h2>Жилье</h2>
+           <h3>Жилье</h3>
            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
          </div>
-         <div class="advantages">
+         <div class="features-item">
            <img src="img/icons/foods.svg" width="20" height="20" alt="Еда"><br>
-           <h2>Еда</h2>
+           <h3>Еда</h3>
            <p>Всегда заказывайте фирменный бургер, вы не разочеруетесь!</p>
          </div>
-         <div class="advantages">
+         <div class="features-item">
            <img src="img/icons/Souvenirs.svg" width="20" height="20" alt="Сувениры"><br>
-           <h2>Сувениры</h2>
+           <h3>Сувениры</h3>
            <p>Не только китайского, но и местного производства!</p>
          </div>
-       </article>
-       <article>
-         <div class="mountains">
+       </div>
+       <div class="dignities">
+         <div class="dignities-picture">
            <img src="img/images/2.jpg" width="800" height="256" alt="Горы">
          </div>
-         <div class="pluses">
-           <h2>Там есть мост дьявола</h2>
+         <div class="dignities-pluses">
+           <h3>Там есть мост дьявола</h3>
            <p>№2</p>
            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
          </div>
+       </div>
+       <div>
          <div class="pluses">
            <h2>Небольшая площать</h2>
            <p>№3</p>
@@ -86,39 +87,54 @@
            <p>№5</p>
            <p>Большинство едет в Гранд Каньон и толпится там</p>
          </div>
-      </article>
-      <section>
-        <h2>Заинтересовались?</h2>
-         <div class="save">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</div>
-         <div class="information">
+      </div>
+      <div class="interesting">
+        <h3 class="interesting-title" >Заинтересовались?</h3>
+         <div class="interesting-subtitle">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</div>
+         <div class="interesting-form">
           <h3>Поиск гостиницы в седоне</h3>
            <form action="https://echo.htmlacademy.ru" method="post">
-              <label>Дата заезда<input type="date" name="date-on" value="2017-04-24"></label>
-              <label>Дата выезда<input type="date" name="date-off" value="2017-07-04"></label>
-              <button type="button" name="adults">Взрослые:</button><!-- будет указанно кол-во человек -->
-              <button type="button" name="children">Дети:</button><!-- будет указанно кол-во человек -->
-              <button type="submit">Отправить</button>
+              <label class="interesting-form-wrap">Дата заезда<input type="date" name="date-on" value="2017-04-24"></label>
+              <label class="interesting-form-wrap">Дата выезда<input type="date" name="date-off" value="2017-07-04"></label>
+              <div class="adults">взрослые:
+                <button type="button" class="min"></button>
+                <input type="button" name="number" value="2">
+                <button type="button" class="max"></button>
+              </div>
+              <div class="children">дети:
+                <button type="button" class="min"></button>
+                <input type="button" name="number" value="0">
+                <button type="button" class="max"></button>
+              </div>
           </form>
        </div>
        <div class="maps">
-         <p>
-           <img src="img/images/map.jpg" width="1200" height="594" alt="карта">
-         </p>
-         <button class="modal-close" type="button">Закрыть</button>
+          <img src="img/images/map.jpg" width="1200" height="594" alt="карта">
+          <button class="modal-close" type="button">Закрыть</button>
        </div>
-      </section>
+     </div>
    </main>
-   <footer>
-     <div class="telefon">
+   <footer class="contact-info">
+     <div class="telephone">
        #VISITSEDONA<br>
        ТЕЛ. +7 (495) 666 02 66
      </div>
      <div class="social-networks">
-       <ul class="social-networks-list">
-         <li class="social-networks-item"><a class="social-networks-link" href="https://twitter.com/"><img src="img/icons/twitter.svg" alt="твиттер"></a></li>
-         <li class="social-networks-item"><a class="social-networks-link" href="https://facebook.com/"><img src="img/icons/facebook.svg" alt="фейсбук"></a></li>
-         <li class="social-networks-item"><a class="social-networks-link" href="https://youtube.com/"><img src="img/icons/youtube.svg" alt="ютуб"></a></li>
-       </ul>
+       <div class="social-networks-item">
+           <a class="social-networks-link" href="https://twitter.com/">
+             <img src="img/icons/twitter.svg" alt="твиттер">
+           </a>
+         </div>
+         <div class="social-networks-item">
+           <a class="social-networks-link" href="https://facebook.com/">
+             <img src="img/icons/facebook.svg" alt="фейсбук">
+           </a>
+         </div>
+         <div class="social-networks-item">
+           <a class="social-networks-link" href="https://youtube.com/">
+             <img src="img/icons/youtube.svg" alt="ютуб">
+           </a>
+        </div>
      </div>
      <div class="logo">
        <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss">

@@ -18,65 +18,48 @@
       </ul>
      </nav>
     </header>
-    <section class="filter">
-      <img src="img/background/filter-background.jpg" width="1200" height="800" alt="Фото природы города Седона- размытое фоновое изображение">
-      <h2>Основные критерии</h2>
-          <div class="container">
-            <div class="filter-row">
-              <div class="filter-col-parameters">
-                <span class="filter-title">Инфраструктора</span>
-                <div>
-                   <label><input type="checkbox" name="swim-pool" checked>Бассейн</label>
-                </div>
-                <div>
-                   <label><input type="checkbox" name="parking">Парковка</label>
-                </div>
-                <div>
-                   <label><input type="checkbox" name="wi-fi">Wi-fi</label>
-                </div>
-              </div>
-              <div class="filter-col-parameters">
-                <span class="filter-title">Тип жилья:</span>
-                <div>
-                   <label><input type="checkbox" name="hotel" checked>Гостиница</label>
-                </div>
-                <div>
-                   <label><input type="checkbox" name="motel" checked>Мотель</label>
-                </div>
-                <div>
-                   <label><input type="checkbox" name="apartments" checked>Аппартаменты</label>
-                </div>
-              </div>
-              <div class="filter-col-slider">
-                <span class="filter-title">Стоимость в сутки</span>
-                <span class="filter-slider">//</span>
-                <span class="filter-btn"><button type="button">Показать</button></span>
-              </div>
-            </div>
+    <div class="main-filter">
+      <h3>Основные критерии</h3>
+        <div class="filter-row">
+          <div class="filter-col-parameters">
+            <span class="filter-title">Инфраструктора</span>
+              <label><input type="checkbox" name="swim-pool" checked>Бассейн</label>
+              <label><input type="checkbox" name="parking">Парковка</label>
+              <label><input type="checkbox" name="wi-fi">Wi-fi</label>
+           </div>
+           <div class="MAIN-filter-col-parameters">
+             <span class="filter-title">Тип жилья:</span>
+               <label><input type="checkbox" name="hotel" checked>Гостиница</label>
+               <label><input type="checkbox" name="motel" checked>Мотель</label>
+               <label><input type="checkbox" name="apartments" checked>Аппартаменты</label>
+           </div>
+           <div class="filter-col-slider">
+               <span class="filter-title">Стоимость в сутки(Р)</span>
+               <span class="filter-slider"><input type="range" min="0" max="3000" step="1" value="0"></span>
+               <span class="filter-btn"><button type="button">Показать</button></span>
           </div>
-        </section>
-        <section class="sort">
-         <h2>Сортировка</h2>
-          <div class="container">
+        </div>
+      </div>
+      <div class="sort">
+         <h3>Сортировка</h3>
             <div class="sort-row">
               <div class="sort-col-result">
-                <span class="sort-total">Найдено:3</span>
+                <span class="sort-total">Найдено:<span>3</span></span>
               </div>
               <div class="sort-col-nav">
                 <span class="sort-remark">Сортировка:</span>
-                 <span class="price"><button type="button">По цене</button></span>
-                 <span class="type"><button type="button">По типу</button></span>
-                 <span class="rating"><button type="button">По рейтингу</button></span>
-               </div>
+                 <button type="button">По цене</button>
+                 <button type="button">По типу</button>
+                 <button type="button">По рейтингу</button>
+              </div>
               <div class="sort-col-arrows">
-                  <span class="increase"><button type="button">Отсорировать по возрастанию</button></span>
-                  <span class="decrease"><button type="button">Отсорировать по убыванию</button></span>
+                  <button type="button">Отсорировать по возрастанию</button>
+                  <button type="button">Отсорировать по убыванию</button>
               </div>
             </div>
-          </div>
-        </section>
+        </div>
     <main>
-      <h1>Гостиницы</h1>
+      <h1>Каталог жилья</h1>
        <ul>
          <li>
           <div class="hotels">
@@ -94,10 +77,10 @@
           </div>
               <div class="estimation">
                 <div class="stars">
-                  <span><img src="img/icons/star.svg" alt="Звезда"></span>
-                  <span><img src="img/icons/star.svg" alt="Звезда"></span>
-                  <span><img src="img/icons/star.svg" alt="Звезда"></span>
-                  <span><img src="img/icons/star.svg" alt="Звезда"></span>
+                  <img src="img/icons/star.svg" alt="Звезда">
+                  <img src="img/icons/star.svg" alt="Звезда">
+                  <img src="img/icons/star.svg" alt="Звезда">
+                  <img src="img/icons/star.svg" alt="Звезда">
                 </div>
                 <div class="rating">Рейтинг 8.5</div>
               </div>
@@ -118,9 +101,9 @@
             </div>
               <div class="estimation">
                <div class="stars">
-                 <span><img src="img/icons/star.svg" alt="Звезда"></span>
-                 <span><img src="img/icons/star.svg" alt="Звезда"></span>
-                 <span><img src="img/icons/star.svg" alt="Звезда"></span>
+                 <img src="img/icons/star.svg" alt="Звезда">
+                 <img src="img/icons/star.svg" alt="Звезда">
+                 <img src="img/icons/star.svg" alt="Звезда">
                </div>
                <div class="rating">Рейтинг 8.9</div>
              </div>
@@ -141,31 +124,41 @@
            </div>
               <div class="estimation">
                 <div class="stars">
-                  <span><img src="img/icons/star.svg" alt="Звезда"></span>
-                  <span><img src="img/icons/star.svg" alt="Звезда"></span>
+                  <img src="img/icons/star.svg" alt="Звезда">
+                  <img src="img/icons/star.svg" alt="Звезда">
                </div>
                <div class="rating">Рейтинг 9.2</div>
               </div>
            </li>
        </ul>
     </main>
-    <footer>
-      <p>
+    <footer class="contact-info">
+      <div class="telephone">
         #VISITSEDONA<br>
         ТЕЛ. +7 (495) 666 02 66
-      </p>
+      </div>
       <div class="social-networks">
-        <ul class="social-networks-list">
-          <li class="social-networks-item"><a class="social-networks-link" href="https://twitter.com/"><img src="img/icons/twitter.svg" alt="твиттер"></a></li>
-          <li class="social-networks-item"><a class="social-networks-link" href="https://facebook.com/"><img src="img/icons/facebook.svg" alt="фейсбук"></a></li>
-          <li class="social-networks-item"><a class="social-networks-link" href="https://youtube.com/"><img src="img/icons/youtube.svg" alt="ютуб"></a></li>
-        </ul>
+        <div class="social-networks-item">
+            <a class="social-networks-link" href="https://twitter.com/">
+              <img src="img/icons/twitter.svg" alt="твиттер">
+            </a>
+          </div>
+          <div class="social-networks-item">
+            <a class="social-networks-link" href="https://facebook.com/">
+              <img src="img/icons/facebook.svg" alt="фейсбук">
+            </a>
+          </div>
+          <div class="social-networks-item">
+            <a class="social-networks-link" href="https://youtube.com/">
+              <img src="img/icons/youtube.svg" alt="ютуб">
+            </a>
+         </div>
       </div>
       <div class="logo">
         <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/icons/logo-html.svg" width="115" height="41" alt="Логотип HTMLAcademy">
         </a>
-      </div>
+       </div>
     </footer>
-  </body>
-</html>
+   </body>
+ </html>
