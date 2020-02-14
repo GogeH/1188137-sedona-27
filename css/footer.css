@@ -1,0 +1,19 @@
+.telephone {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: left;
+}
+
+.logo {
+  line-height: 21px;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+footer {
+  background-color: #f2f2f2;
+}
+
+.contact-information {
+  background-color: #fff;
+}

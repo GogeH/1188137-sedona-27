@@ -1,0 +1,17 @@
+.main-navigation {
+  line-height: 26px;
+  background-color: #ffffff;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-list a {
+  color: #000000;
+}
+
+.navigation-list a:hover,
+.navigation-list a:focus {
+   background-color: #555555;
+}
