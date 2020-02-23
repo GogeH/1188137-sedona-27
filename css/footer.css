@@ -1,19 +1,69 @@
-.telephone {
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+  height: 125px;
+  vertical-align: middle;
+  width: 1200px;
+}
+
+.footer-absolute {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.footer-contacts {
   font-size: 21px;
   line-height: 26px;
-  text-align: left;
+  padding-top: 20px;
 }
 
-.logo {
-  line-height: 21px;
+.footer-col-development {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: normal;
-  vertical-align: middle;
 }
 
-footer {
-  background-color: #f2f2f2;
+.footer-col-development img {
+   width: 115px;
+   height: 41px;
 }
 
 .contact-information {
-  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  background-color: red;
+  height: 120px;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.social-networks ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 156px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-networks-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
 }
