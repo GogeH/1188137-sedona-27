@@ -1,31 +1,48 @@
 .footer {
-  display: flex;
-  justify-content: space-around;
   background-color: rgba(255, 255, 255, 0.9);
   font-weight: bold;
-  height: 125px;
   vertical-align: middle;
   width: 1200px;
 }
 
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 31px 100px 35px 133px;
+}
+
+.footer-row-catalog {
+  padding: 30px 101px 34px 130px;
+}
+
 .footer-absolute {
   position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  bottom: -3px;
 }
 
 .footer-contacts {
   font-size: 21px;
   line-height: 26px;
-  padding-top: 20px;
+}
+
+.footer-hashtag {
+  margin-bottom: 6px;
+}
+
+.footer-col-website {
+  margin-right: 8px;
+}
+
+.footer-contacts a:hover {
+  color: #81b3d2;
 }
 
 .footer-col-development {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items:center;
   font-weight: normal;
+  min-width: 240px;
 }
 
 .footer-col-development img {
@@ -33,37 +50,62 @@
    height: 41px;
 }
 
-.contact-information {
-  display: flex;
-  justify-content: space-around;
-  background-color: red;
-  height: 120px;
-}
-
 .social-networks {
   display: flex;
-  justify-content: space-around;
-  padding: 0;
+  justify-content: space-between;
+  padding-right: 8px;
   margin: 0;
 }
 
-.social-networks ul {
+.social-networks-list {
   display: flex;
   flex-wrap: wrap;
-  width: 156px;
-  justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-top: 35px;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 8px;
 }
 
 .social-networks-item {
+  margin-right: 6px;
+
+}
+
+.social-networks-item:last-of-type {
+  margin-right: 0;
+}
+
+.social-networks-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.social-networks-link:hover {
+  background-color: #669ec0;
+}
+
+.social-networks-link:active {
+  background-color: #5496bd;
+}
+
+.social-networks-link:active path {
+  fill: #81b3d2;
+}
+
+.html-academy{
+  margin-top: 6px;
+}
+
+.html-academy:hover path {
+    fill: #81b3d2;
+}
+
+.html-academy:active path {
+    fill: #bdbbbc;
 }
